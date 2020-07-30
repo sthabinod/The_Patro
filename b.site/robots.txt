@@ -1,0 +1,16 @@
+User-agent:msnbot
+Crawl-delay:120
+Disallow:/*.xml$
+Disallow:/buzz/*.xml$
+Disallow:/mobile/
+Disallow:*?s=mobile
+Disallow:*?s=lightbox
+Disallow:/bfmp/
+Disallow:/buzzfeed/
+Disallow:/contest/
+Disallow:/contests
+Disallow:/plugin/
+Disallow:/emded/
+
+User-agent:discobot
+Crawl-delay:4

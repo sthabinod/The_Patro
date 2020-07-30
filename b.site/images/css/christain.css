@@ -1,0 +1,59 @@
+ .text {
+            text-align: center;
+            font-size: 18px;
+        }
+	 .footer-color {
+
+            background-color: #3f3f3f;
+            color: white;
+        }
+	body
+	{
+		background-color:rgb(238,238,238);
+	}
+	.margin-30
+	{
+		margin:30px;
+	}
+	
+	 .underline-meaning {
+            color:#373434;
+            position: relative;
+            margin-top: 10px;
+
+
+        }
+	 .underline-meaning:hover {
+            color: green;
+            cursor: pointer;
+        }
+
+        .underline-meaning::before {
+            content: '';
+            height: 4px;
+            width: 22%;
+            background: navy;
+            position: absolute;
+            left: 10;
+            bottom: 0;
+            transform-scaleX(1);
+            transform-origin: bottom left;
+
+        }
+
+	.sidenav {
+  width:400px;
+  position: fixed;
+  z-index: -1;
+  top: 100px;
+  left: 900px;
+	margin-top:15px;
+  
+}
+		.bottom
+		{
+				margin-bottom:20px;
+		
+		}
+
+	 

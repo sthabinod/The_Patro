@@ -1,0 +1,248 @@
+<!-- This document contains the DTD declaration for external link entities and text entites for commonly shared markup in XML essay.
+	It is comprised of three sections.
+	1. The Notation Section for declaring file types (html, php, xml, etc.)
+	2. The Text Entity Section for entities that contains shared mark-up such as ProfileDesc.
+	2. The Entities Section containing the entities for the actual links.
+	
+	This file should be included in every THL essay and the links within the essay are marked up
+	using an xref element whose doc attribute is set to the entity name for that link.
+	
+	A link is defined as something external to the document (essay) in question. It can point either to another THL document 
+	or to a web page outside of THL. This entity file contains links that point outside of THL. The file "internal-links.dtd" contains
+	all THL-internal links.
+	
+	By using a central document such as this where all essay links reside, one can change all occurrences of a link
+	simply by changing the value of the entity here.
+	
+	Each entity name must be unique. There can be no duplicates. 
+	Ideally, we should use a unique THL ID for the THL documents referred to.
+	But for now entity names should be unique and (whenever possible) descriptive, such as "serapeople".
+	
+	Before adding an entity search for the link to see if it is already here.
+	
+	The links should be listed here in alphabeticall order by the entity name.
+	
+	The DTD statemtent at the top of the essay should look something like:
+	
+	<!DOCTYPE TEI.2 SYSTEM "../../../xml/dtds/xtib3.dtd" [
+      <!ENTITY % extlinks SYSTEM "../../../essays/xml/external-links.dtd" >
+      %extlinks;
+    
+      ]>
+	
+	Though the location of the xtib3.dtd may change when we have fully migrated to the cluster.
+	
+	
+	Created by: Than Grove
+	Date: 2007-10-30
+	Last Modified by: Than Grove (2008-07-21)
+-->
+
+<!-- ****************************** NOTATION SECTION ******************************
+	Each File type must be declared here in the model of those below.
+-->
+	<!NOTATION HTML SYSTEM "text/html" >
+	<!NOTATION PHP SYSTEM "text/php" >
+	<!NOTATION XML SYSTEM "text/xml" >
+	
+	<!-- Image File Notations -->
+	<!NOTATION BMP SYSTEM "image/bmp">
+	<!NOTATION GIF SYSTEM "image/gif">
+	<!NOTATION JPG SYSTEM "image/jpeg">
+	<!NOTATION PNG SYSTEM "image/png">
+	
+	<!-- Movie Notation -->
+	<!NOTATION MOV SYSTEM "video/quicktime">
+	<!NOTATION MP4 SYSTEM "video/mpeg">
+	
+	<!-- ****************************** XML CHUNK ENTITIES ******************************-->
+	
+	<!-- Publication information -->
+	<!ENTITY thdlpublisher SYSTEM "thdlpublisher.xml" >
+	
+	<!ENTITY thdlpubplace SYSTEM "thdlpubplace.xml">
+	
+	<!ENTITY thdlprofiledesc SYSTEM "thdlprofiledesc.xml">
+		
+	<!-- ****************************** LINK ENTITIES ******************************
+		Each unique external link used in any essay in THL
+		(template: <!ENTITY SYSTEM "" NDATA HTML >)
+		-->
+	
+	<!-- A -->
+	<!ENTITY aarweb SYSTEM "http://www.aarweb.org/meetings/Annual_Meeting/Past_and_Future_Meetings/2003/programbook.asp" NDATA HTML > <!-- Was http://www.aarweb.org/annualmeet/2003/pbook/abstract.asp but that link is dead -->
+	<!ENTITY absc-usgs SYSTEM "http://www.absc.usgs.gov/research/brownbears/attacks/bear-human_conflicts.htm" NDATA HTML >
+	<!ENTITY acc2insight SYSTEM "http://www.accesstoinsight.org/canon/vinaya/bhikkhu-pati.html" NDATA HTML >
+	<!ENTITY acipcourse9 SYSTEM "http://www.acidharma.org/aci/online/course9.html" NDATA HTML >
+	<!ENTITY amazon-ekai SYSTEM "http://www.amazon.com/Stranger-Tibet-Adventures-Wandering-Monk/dp/0870118919" NDATA HTML >
+	<!ENTITY anuragjain SYSTEM "http://www.anuragjain.com/travelswk.html" NDATA HTML >
+	<!ENTITY apple-qt SYSTEM "http://www.apple.com/quicktime" NDATA HTML >
+	<!ENTITY asia-quart-art SYSTEM "http://www.asiaquarterly.com/content/view/34/40/" NDATA HTML >
+	<!ENTITY asnart-meru SYSTEM "http://www.asianart.com/lhasa_restoration/76houses/merunyingba/index.html" NDATA HTML >
+
+	
+	<!-- B -->
+	<!ENTITY britac SYSTEM "http://www.britac.ac.uk/" NDATA HTML >
+	<!ENTITY brill-tib-stud-lib SYSTEM "http://www.brill.nl/m_catalogue_sub6_id9780.htm" NDATA HTML >
+	<!ENTITY buddhistethics011 SYSTEM "http://www.buddhistethics.org/8/cozor011.html" NDATA HTML >
+	<!ENTITY buddhistethics SYSTEM "http://www.buddhistethics.org/" NDATA HTML >
+	<!ENTITY buddict SYSTEM "http://buddhism-dict.net/ddb/index.html" NDATA HTML >
+	<!ENTITY buried-princess-art SYSTEM "http://dhr.iwhr.com/dhr/B20070105.htm" NDATA HTML >
+	<!ENTITY britmycolsoc SYSTEM "http://www.britmycolsoc.org.uk/files/English_Names.pdf" NDATA HTML >
+	
+	<!-- C -->
+	<!ENTITY ccbs SYSTEM "http://ccbs.ntu.edu.tw/FULLTEXT/JR-BJ001/93614.htm" NDATA HTML >
+	<!ENTITY china-biodiversity SYSTEM "http://www.chinabiodiversity.com/" NDATA HTML >
+	<!ENTITY china-com-art SYSTEM "http://www.china.com.cn/english/2001/Jun/14006.htm" NDATA HTML >
+	<!ENTITY china-dev-brief SYSTEM "http://www.chinadevelopmentbrief.com/" NDATA HTML >
+	<!ENTITY china-gov SYSTEM "http://www.gov.cn/" NDATA HTML >
+	<!ENTITY china-org SYSTEM "http://www.china.org.cn/" NDATA HTML >
+	<!ENTITY cites-app SYSTEM "http://www.cites.org/eng/app/appendices.pdf" NDATA HTML >
+	<!ENTITY cites-how SYSTEM "http://www.cites.org/eng/disc/how.shtml" NDATA HTML >
+	<!ENTITY cornell-dl SYSTEM "http://digital.library.cornell.edu/" NDATA HTML >
+	<!ENTITY crt-case SYSTEM "http://www.cwru.edu/affil/tibet/" NDATA HTML >
+	
+	<!-- D -->
+	<!ENTITY dept-ed-us SYSTEM "http://www2.ed.gov/" NDATA HTML >
+	<!ENTITY defenders SYSTEM "http://www.defenders.org/resources/publications/programs_and_policy/wildlife_conservation/imperiled_species/grizzly/a_place_for_grizzlies.pdf" NDATA HTML >
+	<!ENTITY dfg SYSTEM "http://www.dfg.de/en/" NDATA HTML >
+	<!ENTITY diff-int SYSTEM "http://www.nomadsed.de/" NDATA HTML >
+	<!ENTITY dwink1 SYSTEM "http://www.danielwinkler.com/caterpillar_fungus_in_tibet.htm" NDATA HTML >
+	<!ENTITY dwink2 SYSTEM "http://danielwinkler.com/matsutake_conservation_in_sw_china.htm" NDATA HTML >
+	<!ENTITY dwink3 SYSTEM "http://danielwinkler.com/id71.htm" NDATA HTML >
+	
+	<!-- E -->
+	<!ENTITY env-gov SYSTEM "http://www.env.gov.bc.ca/wld/documents/bear_human_conflict.pdf" NDATA HTML >
+	<!ENTITY esscross SYSTEM "http://essenes.crosswinds.net/bhik.htm" NDATA HTML >
+	<!ENTITY etfrn SYSTEM "http://www.etfrn.org/etfrn/workshop/ntfp/text.pdf" NDATA HTML >
+	<!ENTITY eurasischesmagazin SYSTEM "http://www.eurasischesmagazin.de/artikel/?artikelID=" NDATA HTML >
+	
+	<!-- F -->
+	<!ENTITY fao SYSTEM "http://www.fao.org/" NDATA HTML >
+	<!ENTITY fao1 SYSTEM "http://www.fao.org/docrep/W7261E/W7261e10.HTM" NDATA HTML>
+	<!ENTITY fao2 SYSTEM "http://www.fao.org/docrep/007/y5489e/y5489e00.htm" NDATA HTML>
+	<!ENTITY fao3 SYSTEM "http://www.fao.org/docrep/W7261E/W7261e13.htm" NDATA HTML>
+	<!ENTITY fao4 SYSTEM "http://www.fao.org/docrep/005/ab598e/ab598e00.htm" NDATA HTML>
+	<!ENTITY fs-fed-us SYSTEM "http://www.fs.fed.us/r1/wildlife/igbc/ConservationStrategy/wyomingplan.pdf" NDATA HTML>
+	<!ENTITY fpmt-dagri SYSTEM "http://www.fpmt.org/teachers/resident/dagri.asp" NDATA HTML> <!-- This link does not allow inclusion in popup windows, must set xref's rend attribute to "_blank" -->
+	<!ENTITY freer SYSTEM "http://www.asia.si.edu/collections/singleObject.cfm?ObjectNumber=" NDATA HTML>
+	
+	<!-- G -->
+	<!ENTITY gold-docs SYSTEM "http://www.case.edu/affil/tibet/tibetanSociety/documents/" NDATA HTML >
+	<!ENTITY gold-books2 SYSTEM "http://www.case.edu/affil/tibet/tibetanNomads/documents/" NDATA HTML >
+	<!ENTITY gold-books SYSTEM "http://www.case.edu/affil/tibet/tibetanNomads/books.htm" NDATA HTML >
+	<!ENTITY gold-social SYSTEM "http://www.cwru.edu/affil/tibet/tibetanSociety/social.htm" NDATA HTML >
+	<!ENTITY gold-diss SYSTEM "http://www.cwru.edu/affil/tibet/booksAndPapers/Goldstein-Dissertation.pdf" NDATA HTML >
+	<!ENTITY google SYSTEM "http://www.google.com/" NDATA HTML >
+	<!ENTITY gov-cn-art SYSTEM "http://english.gov.cn/2005-10/11/content_247216.htm" NDATA HTML >
+	<!ENTITY gjj SYSTEM "http://gjj.cc/XiZang/MeiTi/naqu.htm" NDATA HTML >
+	<!ENTITY gs SYSTEM "http://www.gs.lss.gov.cn/" NDATA HTML >
+	
+	<!-- H -->
+	<!ENTITY himart SYSTEM "http://www.himalayanart.org/" NDATA HTML>
+	<!ENTITY himart-db SYSTEM "http://www.himalayanart.org/image.cfm?icode=" NDATA HTML>
+	<!ENTITY himart-db-set SYSTEM "http://www.himalayanart.org/search/set.cfm?setID=" NDATA HTML>
+	<!-- Replaced links below with himart-db and himart-db-set with n attributes set,
+		left here commented out in case all instances not discovered (09/29/08)
+	<!ENTITY haimg1 SYSTEM "http://www.himalayanart.org/image.cfm/74196.html" NDATA HTML>
+	<!ENTITY himart2 SYSTEM "http://www.himalayanart.org/image.cfm/65275.html" NDATA HTML>
+	<!ENTITY himart3 SYSTEM "http://www.himalayanart.org/image.cfm?icode=105" NDATA HTML>
+	<!ENTITY himart4 SYSTEM "http://www.himalayanart.org/search/set.cfm?setID=693" NDATA HTML>
+     <!ENTITY himart5 SYSTEM "http://www.himalayanart.org/image.cfm/61.html" NDATA HTML>-->
+	
+	<!-- I -->
+	<!ENTITY iats2006 SYSTEM "http://www.iats2006.uni-bonn.de/" NDATA HTML >
+	<!ENTITY idp SYSTEM "http://idp.bl.uk/database/oo_loader.a4d?pm=" NDATA HTML >
+	<!ENTITY idp-db SYSTEM "http://idp.bl.uk/database/" NDATA HTML >
+	<!ENTITY idp-home SYSTEM "http://idp.bl.uk/" NDATA HTML >
+	<!ENTITY ilri SYSTEM "http://www.ilri.org/" NDATA HTML >
+	<!ENTITY itc SYSTEM "http://www.tibetanclassics.org/index.html" NDATA HTML >
+	
+	<!-- J -->
+	<!ENTITY jinpa SYSTEM "http://www.jinpa.org/" NDATA HTML >
+	
+	<!-- K -->
+	<!ENTITY kg-stud SYSTEM "http://www.istb.univie.ac.at/kanjur" NDATA HTML >
+	<!ENTITY karnataka-sug-itin SYSTEM "http://web.archive.org/web/20051218122326/http://www.karnatakatourism.org/html/package/suggested_itineraries_PRN.htm" NDATA HTML >
+	<!ENTITY karnataka-tourguide SYSTEM "http://www.karnataka.com/tourism/tourguide/" NDATA HTML >
+	<!ENTITY kvtc SYSTEM "http://www.kvtc.de/" NDATA HTML >
+	
+	<!-- L -->
+	<!ENTITY loc SYSTEM "http://www.loc.gov/" NDATA HTML >
+	
+	<!-- M-->
+	<!ENTITY mstp SYSTEM "http://www.mstp.us/" NDATA HTML >
+	<!ENTITY mekong SYSTEM "http://www.mekonginfo.org/mrc_en/doclib.nsf/0/4DF3BAFD4FB10F4947256B420029A216/$FILE/FULLTEXT.html" NDATA HTML >
+      <!ENTITY miller SYSTEM "http://www.cwru.edu/affil/tibet/booksAndPapers/miller.looking.back.to.move.ahead.pdf" NDATA HTML >
+      <!--China Ministry of Education-->
+      <!ENTITY moe SYSTEM "http://www.moe.edu.cn/" NDATA HTML >
+	
+	<!-- N-->
+	<!ENTITY nirukta SYSTEM "http://www.sub.uni-goettingen.de/ebene_1/fiindolo/gretil/1_sanskr/1_veda/5_vedang/3_pratis/niruktau.htm" NDATA HTML >
+	
+	<!-- O -->
+	<!ENTITY oecd-observer SYSTEM "http://www.oecdobserver.org/news/fullstory.php" NDATA HTML >
+	<!ENTITY orchidbooks SYSTEM "http://www.orchidbooks.com/" NDATA HTML >
+	<!ENTITY orchidbooks-fighting-monk SYSTEM "http://d30021575.purehost.com/asian_port.html#advtibfmonk" NDATA HTML >
+	
+	<!-- P -->
+	<!ENTITY pbase SYSTEM "http://www.pbase.com/lambsfeathers/image/43157671" NDATA HTML >
+	<!ENTITY plateau-perspectives SYSTEM "http://www.plateauperspectives.org/downloads/Building%20partnerships.pdf" NDATA HTML >
+	<!ENTITY phuntsho SYSTEM "http://www.bl.uk/about/policies/endangeredarch/phuntsho.html" NDATA HTML >
+	
+	<!-- Q -->
+	<!ENTITY qhei SYSTEM "http://www.qhei.gov.cn/" NDATA HTML >
+	
+	<!-- R -->
+	<!ENTITY rubin-wutai SYSTEM "http://wutaishan.rma2.org/rma_viewer.php?image_id=1&mode=info" NDATA HTML >
+	
+	<!-- S -->
+	<!ENTITY sage SYSTEM "http://mcx.sagepub.com/" NDATA HTML>
+	<!ENTITY save-tib-doc SYSTEM "http://www.savetibet.org/documents/document.php?id=" NDATA HTML>
+	<!ENTITY save-tib-news SYSTEM "http://www.savetibet.org/news/newsitem.php?id=" NDATA HTML>
+	<!ENTITY shechen SYSTEM "http://www.shechen.org/" NDATA HTML>
+	<!ENTITY shedrub-zungdrel-ling SYSTEM "http://www.fpmt.org/IMI/sangha/2003/shedrub.asp" NDATA HTML>
+	<!ENTITY shemgroup SYSTEM "http://www.shemgroup.org/" NDATA HTML >
+	<!ENTITY snowlandsgroup SYSTEM "http://www.snowlandsgroup.org/" NDATA HTML >
+	<!ENTITY snowlion-home SYSTEM "http://www.snowlionpub.com/" NDATA HTML>
+	<!ENTITY snowlion-search SYSTEM "http://www.snowlionpub.com/search.php?" NDATA HTML>
+	<!ENTITY species-idaho SYSTEM "http://species.idaho.gov/pdf/grizzly_plan.pdf" NDATA HTML>
+	<!ENTITY srd-ab-ca SYSTEM "http://www.srd.gov.ab.ca/fishwildlife/speciesatrisk/pdf/SAR_10.pdf" NDATA HTML>
+	<!ENTITY ssas SYSTEM "http://www.britac.ac.uk/institutes/SSAS/index.html" NDATA HTML>
+	<!ENTITY ssas-kangyur SYSTEM "http://clients.raffaelemalanga.co.uk/SSAS/projects/kangyur.htm" NDATA HTML >
+	
+	<!-- <!ENTITY SYSTEM "" NDATA HTML > -->
+	
+	<!-- T -->
+	<!ENTITY tbrc SYSTEM "http://tbrc.org/" NDATA HTML >
+	<!ENTITY tbrc-news SYSTEM "http://www.tbrc.org/news/tbrc-news.xq" NDATA HTML >
+	<!ENTITY tbrc-search SYSTEM "http://www.tbrc.org/kb/tbrc-detail.xq?RID=" NDATA HTML >
+	<!ENTITY thf-ani SYSTEM "http://www.tibetheritagefund.org/pages/research/animation.php" NDATA HTML>
+	<!ENTITY thf-dl SYSTEM "http://www.tibetheritagefund.org/media/download/" NDATA HTML>
+	<!ENTITY thubtenchodron1 SYSTEM "http://www.thubtenchodron.org/Publications/PreparingForOrdination/PFO_Appendix1.html" NDATA HTML>
+	<!ENTITY thubtenchodron2 SYSTEM "http://www.thubtenchodron.org/BuddhistNunsMonasticLife/the_present_status_of_the_bhikshuni_ordination.html" NDATA HTML>
+	<!ENTITY thubtenchodron3 SYSTEM "http://www.thubtenchodron.org/Publications/PreparingForOrdination/PFO_Appendix2.html" NDATA HTML>
+	<!ENTITY tibet-bud SYSTEM "http://www.tibet.com/Buddhism/" NDATA HTML>
+	<!ENTITY tibet-com-8ausp SYSTEM "http://www.tibet.com/Buddhism/8ausp.html" NDATA HTML>
+	<!ENTITY tibet-dsd SYSTEM "http://www.tibet.com/dholgyal/shugden-origins.html" NDATA HTML>
+	<!ENTITY tibet-geshe SYSTEM "http://www.tibet.com/Buddhism/geshe.html" NDATA HTML>
+	<!ENTITY tibetinfo-desideri SYSTEM "http://www.tibetinfor.com.cn/tibetzt/study/english/abstract/ab_24.htm" NDATA HTML >
+	<!ENTITY tibetinfo-lhasa-maps SYSTEM "http://www.tibetinfo.org/reports/lhasamaps" NDATA HTML >
+	<!ENTITY tib-stud-res SYSTEM "http://tibetan-studies-resources.blogspot.com/" NDATA HTML >
+	
+	<!-- U -->
+	<!ENTITY ucp8045 SYSTEM "http://www.ucpress.edu/books/pages/8045.php" NDATA HTML >
+	<!ENTITY ucp9638 SYSTEM "http://www.ucpress.edu/books/pages/9638.html" NDATA HTML >
+	<!ENTITY upenn-green-art SYSTEM "http://web.archive.org/web/20030511113000/dolphin.upenn.edu/~pennenv/greentimes/spring97/dam.html" NDATA HTML >
+	<!ENTITY us-tom-com-art SYSTEM "http://us.tom.com/english/2284.htm" NDATA HTML >
+	
+	<!-- W -->
+	<!ENTITY wbr SYSTEM "http://www.westernbuddhistreview.com/" NDATA HTML >
+	<!ENTITY westchinagov SYSTEM "http://www.westchina.gov.cn/" NDATA HTML >
+	<!ENTITY wikipedia SYSTEM "http://en.wikipedia.org/wiki/" NDATA HTML >
+	<!ENTITY williams SYSTEM "http://religion.williams.edu/faculty/" NDATA HTML >
+	<!ENTITY wolfson SYSTEM "http://www.wolfson.ox.ac.uk/" NDATA HTML >
+	
+	<!-- X -->
+	<!ENTITY xinhua SYSTEM "http://news.xinhuanet.com/" NDATA HTML >
+	

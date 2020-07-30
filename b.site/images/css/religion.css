@@ -1,0 +1,56 @@
+
+/*Css Styling Media Screen */
+
+.paragraph
+{
+	font-size: calc(10px+1vw);	
+}
+@media screen and (max-width:500px)
+{
+	.search
+	{
+		display:none;
+	}
+}
+.card-scale:hover {
+      transform: scale(1.0);
+
+}
+
+.brand-color {
+      color: red;
+      font-size: 25.1px;
+ }
+
+.card-link {
+      text-decoration: none;
+      color: black;
+}
+
+.footer {
+      background-color: #3f3f3f;
+      color: white;
+    }
+
+.hr {
+     background-color: aliceblue;
+}
+	 
+body 
+{
+     background-color: rgb(238, 238, 238)
+}
+.jumbotron
+{
+	background-color:#1F527D;
+	color: wheat;
+	border-radius: 0;
+}
+hr
+{
+	background: white;
+	}
+.justify
+{
+	text-align: justify;
+}

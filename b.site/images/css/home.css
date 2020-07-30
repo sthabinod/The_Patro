@@ -1,0 +1,213 @@
+/* CSS Document */
+
+.lead{
+		  text-align:justify;
+	  }
+  .fakeimg {
+    height: 200px;
+    background: #787575;
+  }
+	  .jumbotron1
+	  {
+		
+		  background-color: #BB1A1C;
+		  color:white;
+		  border-radius: 0px;
+		  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			 
+	  }
+
+	  .underline{
+		  color:black;
+		  position: relative;
+		  margin-top:30px;
+		 
+	  }
+	  .underline:hover
+	  {
+		  color:green;
+		  cursor: pointer;
+	  }
+	  .underline::after
+	  {
+		  content: '';
+		  height: 2px;
+		  width: 36%;
+		  background:#E80003;
+		  position:absolute;
+		  left:0;
+		  bottom:0;
+	
+	  }
+	  
+	  .underline-meaning{
+		  color:#BB1A1C;
+		  position: relative;
+		  margin-top:30px;
+		  margin-top:30px;
+		 
+	  }
+	  .underline-meaning:hover
+	  {
+		  color:green;
+		  cursor: pointer;
+	  }
+	  .underline-meaning::before	
+	  {
+		  content: '';
+		  height: 2px;
+		  width: 35%;
+		  background: blue;
+		  position:absolute;
+		  left:0;
+		  bottom:0;
+		  transform-scaleX(1);
+		  transform-origin: bottom left;
+	
+	  }
+	  
+	  .containerOne
+	  {
+		  display: flex;
+		  background-color:#393333;
+		  color:wheat;
+	  }
+	  .box{
+		  flex:auto;
+	  }
+	  
+	  
+	  .slide {
+    animation: blinkingText 0.6s infinite;
+}
+
+/*
+ key frames define the behavior of one cycle of a CSS animation.
+*/
+
+@keyframes slide {
+    10% {
+        color: black;
+    }
+}
+	  
+	  @media screen and (max-width:500px)
+	  {
+		  .search
+		  {
+			  display:none;
+		  }
+		  .para
+		  {
+			  font-size: calc(5px + 1.5vw);
+		  }
+	  }
+	  
+	  .image
+	  {
+		  transition: 0.2s;
+		  
+	  }
+	  
+	  .image:hover
+	  {
+		  transform: scale(1.01);
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+	border:1px solid #06000A;
+   
+}
+
+.fa-facebook:hover {
+    
+	transform: scale(1.1);
+	color:#E90509;
+
+}
+.fa-google:hover {
+    
+	transform: scale(1.1);
+	color:white;
+
+}
+.fa-twitter:hover {
+    
+	transform: scale(1.1);
+	color:blue;
+
+}
+
+
+.fa-linkedin:hover {
+    
+	transform: scale(1.1);
+	color:#E90509;
+
+}
+
+
+.fa-facebook {
+  background: #3b5999;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #bd081c;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+ background-image: linear-gradient(to bottom left,purple,red,yellow );
+	
+  color: white;
+}
+
+.fa-instagram:hover {
+    
+	transform: scale(1.1);
+	color:white;
+
+}
+
+ .para{
+			  font-size: calc(4.5px + 1vw);
+	 text-align:justify;letter-spacing:1px;color:black;
+	 font-family: 
+		  }
+	@media screen and (max-width:500px)
+	  {
+		 
+		  .para
+		  {
+			  font-size: calc(5px + 3vw);
+			  
+		  }
+	  }
